@@ -1,7 +1,7 @@
 use std::env;
 use std::process;
 
-use grep::Config;
+use search_file::Config;
 
 fn main() {
     let config = Config::build(env::args()).unwrap_or_else(|err| {
@@ -9,7 +9,7 @@ fn main() {
         process::exit(1);
     });
 
-    if let Err(e) = grep::run(config) {
+    if let Err(e) = search_file::run(config) {
         eprintln!("Application error: {e}");
 
         process::exit(1);

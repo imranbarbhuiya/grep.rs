@@ -1,5 +1,5 @@
 [package]
-name = "grep"
+name = "search_file"
 description = "yet another grep utility"
 license = "MIT"
 version = "0.1.0"
